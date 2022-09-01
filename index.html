@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/vite.svg" />
+		<link rel="stylesheet" href="https://unpkg.com/@picocss/pico@latest/css/pico.min.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Conversor de zona horaria (LATAM)</title>
+		<meta name="keywords" content="conversor, convertidor, zona horaria, latam, español, españa, hispanoamérica, gmt, utc, time, convertor">
+		<meta name="description" content="Convierte tu hora local a la zona horaria de los países hispanohablantes.">
+		<meta property="og:locale" content="es_ES">
+		<meta property="og:type" content="website">
+		<meta property="og:image" content="/og.png">
+		<meta property="og:image:width" content="1200">
+		<meta property="og:image:height" content="630">
+		<meta property="og:title" content="Conversor de zona horaria">
+		<meta property="og:description" content="Convierte tu hora local a la zona horaria de los países hispanohablantes.">
+		<meta http-equiv="content-language" content="es-es">
+  </head>
+
+  <body>
+    <main class="container">
+			<form>
+				<label>
+					<strong>Elige una fecha y hora</strong>
+					<input id="date-input" type="datetime-local" value="2022-09-12T16:00" />
+				</label>
+			</form>
+
+			<label>
+				<strong>Resultado</strong>
+				<textarea id="result" readonly placeholder="Resultado de la conversión"></textarea>
+			</label>
+			<button id ="copy-btn">
+				<svg width="32" height="32" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 285.102 285.102">
+					<g fill="#fff">
+						<path
+							d="M220.741 46.137h-30.188v-5.785c0-7.444-6.056-13.5-13.5-13.5h-1.667C172.294 11.554 158.748 0 142.552 0s-29.743 11.554-32.835 26.852h-1.669c-7.444 0-13.5 6.056-13.5 13.5v5.785H64.36c-12.407 0-22.5 10.094-22.5 22.5v193.965c0 12.406 10.093 22.5 22.5 22.5h156.381c12.406 0 22.5-10.094 22.5-22.5V68.637c0-12.407-10.093-22.5-22.5-22.5zm-111.193-4.285h66.006v24.571h-66.006V41.852zM142.552 15c7.856 0 14.566 4.931 17.245 11.852h-34.489C127.986 19.931 134.696 15 142.552 15zm85.689 247.602c0 4.136-3.364 7.5-7.5 7.5H64.36c-4.136 0-7.5-3.364-7.5-7.5V68.637c0-4.136 3.364-7.5 7.5-7.5h30.188v6.786c0 7.444 6.056 13.5 13.5 13.5h69.006c7.444 0 13.5-6.056 13.5-13.5v-6.786h30.188c4.136 0 7.5 3.364 7.5 7.5v193.965z" />
+						<path
+							d="M193.212 107.931H91.89a7.5 7.5 0 000 15h101.322a7.5 7.5 0 007.5-7.5c0-4.143-3.357-7.5-7.5-7.5zM193.212 145.26H91.89a7.5 7.5 0 00-7.5 7.5 7.5 7.5 0 007.5 7.5h101.322c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5zM193.212 182.591H91.89a7.5 7.5 0 00-7.5 7.5 7.5 7.5 0 007.5 7.5h101.322c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5zM193.212 231.263h-31.28a7.499 7.499 0 00-7.5 7.5c0 4.143 3.357 7.5 7.5 7.5h31.28c4.143 0 7.5-3.357 7.5-7.5s-3.357-7.5-7.5-7.5z" />
+					</g>
+				</svg>
+				Copiar al portapapeles
+			</button>
+		</main>
+    
+		<script type="module" src="/src/main.ts"></script>
+		
+		<script type="module" defer>
+			import { polyfillCountryFlagEmojis } from "https://cdn.skypack.dev/country-flag-emoji-polyfill";
+			polyfillCountryFlagEmojis();
+		</script>
+
+		<footer>
+			<div>
+				Hecho con 🧡 por &nbsp;<a target="_blank" href="https://github.com/marsidev">marsi</a>
+			</div>
+			
+			<div>
+				Código disponible en <a target="_blank" href="https://github.com/marsidev/timezone-es">GitHub</a>
+			</div>
+		</footer>
+  </body>
+</html>

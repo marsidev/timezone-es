@@ -1,0 +1,17 @@
+body {
+  font-family: "Twemoji Country Flags", Inter, Avenir, Helvetica, Arial, sans-serif;
+}
+
+.toast-close {
+	margin-left: 6px;
+	width: auto;
+	margin-bottom: auto;
+}
+
+footer {
+	display: grid;
+	width: 100%;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+}
